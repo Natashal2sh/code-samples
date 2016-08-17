@@ -78,11 +78,7 @@ Num_list :: Num_list (int i, std::fstream &file)
         else 
         {            
             while (c - '0' >= 0 && c - '9' <= 0) c = file.get ();
-            //file.seekg (-1, file.cur);
-            
-            //c = file.get ();
             c = file.get ();
-            //cout << "c = " << c << endl;
             
             if (c == '\n' || file.eof ())
             {
